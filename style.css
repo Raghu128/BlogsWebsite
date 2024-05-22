@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgba(239, 227, 213, 0.541); */
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(239, 227, 213, 0.541);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(239, 227, 213, 0.541);
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 8em;
+    gap: 1em;
+    overflow: scroll;
+}
+
+header h1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: scroll;
+    font-size: 6vmin;
+    height: 8vmin;
+    width: fit-content;
+    text-shadow: 10px 5px 6px rgba(95, 90, 90, 0.339);;
+}
+
+header p{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    width: 42%;
+    height: 8vmin;
+    font-size: 2vmin;
+    gap: 40em;
+    text-align: center;
+    color: rgba(71, 69, 69, 0.628);
+    font-weight: bold;
+    /* border: 3px solid red; */
+}
+
+
+
+main{
+    height: 60rem;
+    width: 100%;
+    /* border: 4px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.blogsContents{
+    width: 130vmin;
+    height: 100vmin;
+    /* border: 3px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2em;
+    column-gap: 5em;
+}
+
+
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(128, 118, 118, 0.195);
+    justify-content: space-between;
+    border-radius: 0.6em;
+    overflow: hidden;
+    box-shadow: 10px 5px 35px 3px rgba(98, 95, 95, 0.683);;
+} 
+
+.card:hover{
+    scale: 1.1;
+}
+
+.imageBox{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    /* border: 3px solid blue; */
+    overflow: hidden;
+}
+
+.imageBox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imageBox img:hover{
+    scale: 1.2;
+}
+
+
+.about-of-card {
+    width: 100%;
+    height: 26%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    align-items: start;
+    padding: 3%;
+    gap: 15%;
+
+}
+
+.headingOfBlog{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.descr{
+    color: rgba(73, 70, 70, 0.653);
+    overflow: scroll;
+}
+
+.footerOfCard{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.profile{
+    width: 70%;
+    height: 100%;
+    overflow: scroll;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+
+.profile img{
+    width: 18%;
+    height: 60%;
+    border-radius: 100%;
+    background-color: rgba(112, 106, 106, 0.252);
+    object-fit: cover;
+    /* border: 2px solid aqua; */
+}
+
+.about-Profile {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    gap: 1%;
+    overflow: scroll;
+}
+
+.profile-name{
+    color: rgba(64, 96, 238, 0.587);
+    font-size: 2vmin;
+    font-weight: bold;
+    overflow: scroll;
+}
+
+.profile-date{
+    color: rgba(112, 106, 106, 0.587);
+    font-size: 2vmin;
+    font-weight: bold;
+}
+
+.BlogsOn {
+    border: 1px solid rgba(82, 77, 77, 0.239);
+    width: 30%;
+    height: 40%;
+    border-radius: 0.3em;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+}
+
+.BlogsOn p{
+    color: rgba(53, 50, 50, 0.632);
+    font-size: 1.5vmin;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3vmin;
+    /* border: 1px solid rgba(86, 81, 81, 0.648); */
+}
